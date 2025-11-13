@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | DripLane</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      color: #333;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://png.pngtree.com/background/20250122/original/pngtree-fashion-clothing-on-hangers-at-the-show-picture-image_15460073.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #111;
+      margin-bottom: 15px;
+      border-left: 5px solid #000;
+      padding-left: 10px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    form {
+      flex: 1 1 50%;
+      background: #f5f5f5;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    form button {
+      background-color: #111;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background-color: #ff4081;
+    }
+
+    .contact-info {
+      flex: 1 1 40%;
+    }
+
+    .info-box {
+      background: #fafafa;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .info-box h3 {
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      color: #111;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ff4081;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+     /* New Button Style */
+    .page-btn {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .page-btn a {
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 35px;
+      border-radius: 8px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .page-btn a:hover {
+      background-color: #ff4081;
+    }
+     footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact DripLane</h1>
+  </header>
+
+  <section>
+    <h2>We’d Love to Hear from You</h2>
+    <p>Got a question about your order, partnership, or our latest drops? Reach out to us below — our team is always here to help.</p>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="info-box">
+        <h3>Our Store</h3>
+          <p>DripLane Clothing</p>
+          <p>Balongi, Sahibzada Ajit Singh Nagar, Punjab, India</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> contact@driplane.com</p></div>
+
+        <div class="info-box">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="https://www.instagram.com/driplane" target="_blank">📸</a>
+            <a href="https://www.facebook.com/driplane" target="_blank">📘</a>
+            <a href="https://www.twitter.com/driplane" target="_blank">🐦</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Map (Balongi) -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.0334487250627!2d76.6677802742799!3d30.732843189931295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed028e8b9197%3A0x44e8b317c3e88bb3!2sBalongi%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20160362!5e0!3m2!1sen!2sin!4v1731428584321!5m2!1sen!2sin" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+ <!-- Button after section -->
+  <div class="page-btn">
+    <a href="home.html">⬅ Back to Home</a>
+  </div>
+  <footer>
+    &copy; 2025 DripLane | All Rights Reserved
+  </footer>
+</body>
+</html>

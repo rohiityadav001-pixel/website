@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DripLane - Fashion for Everyone</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #222;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+   /* Home - Product Categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 420px; /* ✅ Set fixed height for equal size */
+  padding: 20px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category img {
+  width: 100%;
+  height: 200px; /* ✅ Fixed height for equal image size */
+  object-fit: cover; /* Ensures image scales nicely */
+  border-radius: 10px;
+}
+
+.category h3 {
+  margin-top: 10px;
+}
+
+.category p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.page-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+    iframe {
+      border: none;
+      width: 400px;
+      height: 350px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+.page-btn {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .page-btn a {
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 35px;
+      border-radius: 8px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .page-btn a:hover {
+      background-color: #ff4081;
+    }
+    
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      iframe {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DripLane</h1>
+    <p>Your destination for all types of clothing</p>
+  </header>
+
+
+  <!-- 🏠 Home Section -->
+  <section id="home">
+    <h2>Shop by Category</h2>
+    <div class="categories">
+      <div class="category">
+        <img src="https://img-cdn.publive.online/fit-in/0x0/filters:format(webp)/mayapuri/media/media_files/2025/02/10/Bu0ZXlAwv2KNw77xYGP3.jpg" alt="Shirts">
+        <h3>Formal shirts</h3>
+        <p>Trendy, comfortable shirts for every occasion.</p>
+        <div class="page-btn">
+    <a href="https://share.google/LbAj2SIraE7HCNT8j"> See more </a>
+  </div>
+      </div>
+      <div class="category">
+        <img src="https://static.cilory.com/698060-thickbox_default/grunt-blue-tinted-denim-washed-bootcut-jeans.jpg.webp" alt="Jeans">
+        <h3>Jeans</h3>
+        <p>Classic denim styles that fit every personality.</p>
+        <div class="page-btn">
+    <a href="https://share.google/nVGMs3CG8GJKdt6rZ"> See more </a>
+  </div>
+      </div>
+      <div class="category">
+        <img src="https://i.pinimg.com/236x/7a/a2/19/7aa219757e9f3aae38512811f7dddb79.jpg" alt="T-Shirts">
+        <h3>T-Shirts</h3>
+        <p>Casual, cool and comfy everyday wear.</p>
+        <div class="page-btn">
+    <a href="https://share.google/8ajEGUf35I8nuV4n6"> See more </a>
+  </div>
+      </div>
+      <div class="category">
+        <img src="https://m.media-amazon.com/images/I/71NoMR4JRoL._AC_UY1100_.jpg" alt="Lowers">
+        <h3>Lowers</h3>
+        <p>Perfect for gym, lounging, or travel.</p>
+        <div class="page-btn">
+    <a href="https://share.google/PrbAXohlyQjHH1rjv"> See more </a>
+  </div>
+      </div>
+      <div class="category">
+        <img src="https://i.pinimg.com/736x/02/1b/28/021b28f2e505e03b91774f285ed3c9cd.jpg" alt="Jackets">
+        <h3>Jackets</h3>
+        <p>Stay warm and stylish all season long.</p>
+        <div class="page-btn">
+    <a href="https://share.google/vcSeerNUN9dYimh7V"> See more </a>
+  </div>
+      </div>
+      <div class="category">
+        <img src="https://baccabucci.com/cdn/shop/products/2_253fac4b-55b3-4626-913f-1d4bc7834a90.jpg?v=1643970069" alt="Shoes">
+        <h3>Footwear</h3>
+        <p>Walk with confidence and comfort.</p>
+        <div class="page-btn">
+    <a href="https://share.google/m7CzuQM4WJDacMwGr"> See more </a>
+  </div>
+      </div>
+       <div class="category">
+         <img src="https://cdn.shopify.com/s/files/1/2114/6461/files/03013786-yb747_mens_00010-resized_720.jpg?v=1761852334&width=500" alt="baggy">
+            <h3>Baggy Jeans</h3>
+            <p>Stay loose, stay cool - baggy is the new bold</p>
+        <div class="page-btn">
+    <a href="https://share.google/sdQHh62qKXyWrwzKv"> See more </a>
+  </div>
+      </div>
+       <div class="category">
+        <img src="https://i5.walmartimages.com/seo/Vivianyo-HD-Mens-Sweaters-for-the-Winter-Men-s-Fashion-Winter-High-Neck-Warm-Outdoor-Long-Sleeve-Knitted-Sweater-Top-Flash-Picks-Gray_3b340df4-399f-4201-9314-13b36a9a545f.addf25771828d6f8948f6e7f611a0950.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Sweatshirt">
+            <h3>SweatShirt</h3>
+            <p>Cool. Cozy. Confident</p>
+             <div class="page-btn">
+    <a href="https://share.google/lsNhhoIJVjPAOyTTI"> See more </a>
+  </div>
+      </div>
+       <div class="category">
+         <img src="https://static.ftshp.digital/img/p/1/6/2/1/7/7/4/1621774-full_product.jpg" alt="hoodie">
+            <h3>Oversize Hoodie</h3>
+            <p>Oversized never felt so right </p>
+        <div class="page-btn">
+    <a href="https://share.google/scZsVELyc1JmUtvUt"> See more </a>
+  </div>
+      </div>
+       <div class="category">
+           <img src="https://i.pinimg.com/originals/38/cb/ee/38cbee149e106fb46cbc93ac04a866d5.png" alt="Shirt">
+            <h3>Woolen Shirt</h3>
+            <p>Soft on skin, strong on style</p>
+<div class="page-btn">
+    <a href="https://share.google/PqsfplAFVtU8ww6JS"> See more </a>
+  </div>
+      </div>
+ 
+       <div class="category">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/448252354/BL/EM/ZV/11239587/men-winter-lower.jpg" alt="Lower">
+            <h3>Winter Lower</h3>
+            <p>Cozy layers, classy looks.</p>
+        <div class="page-btn">
+    <a href="https://share.google/DSvscIMNbeQCLIJvM"> See more </a>
+  </div>
+      </div>
+ 
+       <div class="category">
+      <img src="https://imagescdn.simons.ca/images/15233-220091-13-A1_2/oversized-mixed-knit-sweater.jpg?__=27" alt="Sweater">
+            <h3>Sweater</h3>
+            <p>Feel the warmth, Flaunt the look </p>
+   <div class="page-btn">
+    <a href="https://share.google/e4eSnaC2ydDLBXlYw"> See more </a>
+  </div>
+      </div>
+
+      <div class="category">
+      <img src="https://peplosjeans.in/cdn/shop/files/985A0983.jpg?v=1735017703" alt="hoodie">
+            <h3>hoodie</h3>
+            <p>Warmth you can wear </p>
+   <div class="page-btn">
+    <a href="https://share.google/BCOzBFAafOW1yfaPU"> See more </a>
+  </div>
+      </div>
+      <div class="category">
+      <img src="https://images-cdn.ubuy.co.in/6621c81885d4910d0a49cd4b-coofandy-men-39-s-casual-shirts.jpg" alt="shirt">
+            <h3>casual shirts</h3>
+            <p>Beat the chill with effortless style</p>
+   <div class="page-btn">
+    <a href="https://share.google/kr7515YAsb1YYX1NK"> See more </a>
+  </div>
+      </div>
+      </div>
+ 
+    </div>
+  </section>
+
+ <div class="page-btn">
+    <a href="home.html">⬅ Back to Home</a>
+  </div>
+
+  <footer>
+    &copy; 2025 DripLane | All Rights Reserved
+  </footer>
+
+</body>
+</html>

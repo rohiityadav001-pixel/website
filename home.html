@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - DripLane</title>
+<style>
+    /* ======= Base Styles ======= */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f6f9;
+        color: #333;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+        background: url('https://plus.unsplash.com/premium_photo-1683141052679-942eb9e77760?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000') center/cover no-repeat;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    header::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+        position: relative;
+        font-size: 3rem;
+        margin: 0;
+        z-index: 1;
+    }
+
+    header p {
+        position: relative;
+        font-size: 1.3rem;
+        z-index: 1;
+        margin-top: 1rem;
+    }
+
+    nav {
+        background: white;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        margin: 0 15px;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #0056b3;
+    }
+
+    /* ======= Sections ======= */
+    .section {
+        padding: 3rem 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    /* ======= Image Cards ======= */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1 1 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        background: white;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card h3 {
+        text-align: center;
+        margin: 1rem 0 0.5rem;
+        color: #007bff;
+    }
+
+    .card p {
+        text-align: center;
+        padding: 0 1rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* ======= Featured Events ======= */
+    .featured-events {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .featured-events img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+
+    .featured-events img:hover {
+        transform: scale(1.05);
+    }
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f9fafc;
+}
+
+.minimal-footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 15px;
+  position: relative;
+}
+
+.minimal-footer p {
+  margin: 8px 0;
+}
+
+.minimal-footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.minimal-footer a:hover {
+  opacity: 0.7;
+}
+
+.minimal-footer nav {
+  margin: 10px 0;
+}
+
+.copyright {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header Hero -->
+<header>
+    <h1>Welcome to DripLane</h1>
+    <p>Look Good. Feel Better</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="shop.html">Shop</a>|
+    <a href="contact.html">Contact</a> |
+    <a href="about.html">About</a>
+</nav>
+
+<!-- Event Categories Section -->
+<div class="section">
+    <h2>New Arrivals for Winter</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410499092004/jD16RqXjMT-1.jpg" alt="jacket">
+            <h3>Leather jackets</h3>
+            <p>Turn every moment into a statement with our premium leather jackets</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/2114/6461/files/03013786-yb747_mens_00010-resized_720.jpg?v=1761852334&width=500" alt="baggy">
+            <h3>Baggy Jeans</h3>
+            <p>Stay loose, stay cool - baggy is the new bold</p>
+        </div>
+        <div class="card">
+            <img src="https://i5.walmartimages.com/seo/Vivianyo-HD-Mens-Sweaters-for-the-Winter-Men-s-Fashion-Winter-High-Neck-Warm-Outdoor-Long-Sleeve-Knitted-Sweater-Top-Flash-Picks-Gray_3b340df4-399f-4201-9314-13b36a9a545f.addf25771828d6f8948f6e7f611a0950.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Sweatshirt">
+            <h3>SweatShirt</h3>
+            <p>Cool. Cozy. Confident</p>
+        </div>
+        <div class="card">
+            <img src="https://static.ftshp.digital/img/p/1/6/2/1/7/7/4/1621774-full_product.jpg" alt="hoodie">
+            <h3>Oversize Hoodie</h3>
+            <p>Oversized never felt so right </p>
+        </div>
+ <div class="card">
+            <img src="https://i.pinimg.com/originals/38/cb/ee/38cbee149e106fb46cbc93ac04a866d5.png" alt="Shirt">
+            <h3>Woolen Shirt</h3>
+            <p>Soft on skin, strong on style</p>
+        </div>
+        <div class="card">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/448252354/BL/EM/ZV/11239587/men-winter-lower.jpg" alt="Lower">
+            <h3>Winter Lower</h3>
+            <p>Cozy layers, classy looks.</p>
+        </div>
+        <div class="card">
+            <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2021/12/04/635985c827e781eb765414ed013c6aaa_0.jpg" alt="jacket">
+            <h3>Jackets</h3>
+            <p>Wrap yourself in warmth and confidence</p>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.simons.ca/images/15233-220091-13-A1_2/oversized-mixed-knit-sweater.jpg?__=27" alt="Sweater">
+            <h3>Sweater</h3>
+            <p>Feel the warmth, Flaunt the look </p>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Events Section -->
+<div class="section">
+    <h2>Available Stock</h2>
+    <div class="featured-events">
+        <img src="https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/PLP_FH_MShirts_poplin_dt.jpg" alt="Shirt">
+        <img src="https://www.hastparis.com/cdn/shop/files/PANT-H25-PAOLO01-2402.jpg?v=1754578555&width=1066" alt="Trouser">
+        <img src="https://offduty.in/cdn/shop/files/IMG_80822_1024x1024.webp?v=1727295670" alt="Jeans">
+        <img src="https://rukminim2.flixcart.com/image/480/580/xif0q/shoe/d/v/0/7-turbo-7-brainer-white-original-imah7y5w7cxdh2rs.jpeg?q=90" alt="Shoes">
+        <img src="https://veirdo.in/cdn/shop/files/ai_creative_0000_Layer_6.jpg?v=1754546584" alt="T-shirts">
+        <img src="https://i.pinimg.com/736x/95/fe/62/95fe62e12578b1fd4989b0583c187c24.jpg" alt="jean jacket">
+        <img src="https://icon-amsterdam.com/cdn/shop/files/Polo-Black-2_large.png?v=1761729625" alt="7">
+        <img src="https://i.pinimg.com/736x/c4/b3/86/c4b3869a046b47cde21bd98478331af9.jpg" alt="8">
+    </div>
+</div>
+<footer class="minimal-footer">
+  <p>Made with ❤️ by<a href="#">Rohit | Abhijit </a></p>
+  <p class="copyright">© 2025 DripLane. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
